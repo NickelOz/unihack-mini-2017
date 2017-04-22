@@ -17,19 +17,32 @@
 
 <body>
 
-<div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-        <div class="jumbotron">
-            <h1>We are here, welcome.</h1>
-        </div>
-    </div><!-- /.col-->
-</div><!-- /.row -->
-
+<header class="banner">
+    <div class="header logo">
+        <p>Palendar</p>
+    </div>
+    <div class="header logindetails">
+        <p>username here</p>
+    </div>
+</header>
+<div class="main outer">
+    <div class="calendar-main inner">
+        <div class = "calendar-day calendar-monday"></div>
+        <div class = "calendar-day calendar-tuesday"></div>
+        <div class = "calendar-day calendar-wednesday"></div>
+        <div class = "calendar-day calendar-thursday"></div>
+        <div class = "calendar-day calendar-friday"></div>
+        <div class = "calendar-day calendar-saturday"></div>
+        <div class = "calendar-day calendar-sunday"></div>
+    </div>
+</div>
+<footer>
+    <p class="legal">Created by Parsing Fancy</p>
+</footer>
 
 
 <script src="dashboard/website/webpages/js/jquery-1.11.1.min.js"></script>
 <script src="dashboard/website/webpages/js/bootstrap.min.js"></script>
-<script src="dashboard/website/webpages/js/bootstrap-datepicker.js"></script>
 <script>
     !function ($) {
         $(document).on("click","ul.nav li.parent > a > span.icon", function(){
