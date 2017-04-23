@@ -27,10 +27,43 @@
         <p>Palendar</p>
     </div>
     <div class="header logindetails">
-        <p>username here</p>
+        <p> username here</p>
     </div>
 </header>
 <div class="main outer">
+    <div class="calendar container-main inner">
+        <div class = "calendar-day calendar-monday">
+            <div class="event unit1 one"><div>FIT1050 Lecture</div><div>10m - 11am</div></div>
+            <div class="event unit2 one"><div>FIT1045 Lecture</div><div>1pm - 2pm</div></div>
+        </div>
+        <div class = "calendar-day calendar-tuesday">
+            <div class="event unit3 onehalf"><div>MAT1830 Tutorial</div><div>8:30am - 10am</div></div>
+            <div class="event unit2 one"><div>FIT1045 Lecture</div><div>1pm - 2pm</div></div>
+            <div class="event unit4 one"><div>FIT1047 Lecture</div><div>2pm - 3pm</div></div>
+            <div class="event unit1 two"><div>FIT1045 Tutorial</div><div>3pm-5pm</div></div>
+        </div>
+        <div class = "calendar-day calendar-wednesday">
+
+        </div>
+        <div class = "calendar-day calendar-thursday">
+
+        </div>
+        <div class = "calendar-day calendar-friday">
+
+        </div>
+        <div class = "calendar-day calendar-saturday">
+
+        </div>
+        <div class = "calendar-day calendar-sunday">
+
+        </div>
+    </div>
+    <div>
+        <form id="file-form" action="handler.php" method="POST" enctype="multipart/form-data">
+            <input class="buttons" type="file" id="file-select" name="userfile" />
+            <button class="buttons" type="submit" id="upload-button">Upload</button>
+        </form>
+    </div>
     <div class="calendar-main inner">
         <div class = "calendar-day calendar-monday"></div>
         <div class = "calendar-day calendar-tuesday"></div>
@@ -47,6 +80,7 @@
         <button type="submit" id="upload-button">Upload</button>
     </form>
 </div>
+
 <footer>
     <p class="legal">Created by Parsing Fancy</p>
 </footer>
