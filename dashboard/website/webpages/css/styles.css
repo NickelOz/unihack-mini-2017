@@ -28,6 +28,7 @@ header {
 footer {
 	overflow: hidden;
 	background-color: #7facce;
+	height: 3vh;
 }
 
 .banner{
@@ -150,6 +151,7 @@ footer {
 #file-form {
 	width: 80%;
 	margin: auto;
+	height: 20vh;
 }
 
 .buttons {
@@ -177,7 +179,8 @@ footer {
 }
 
 .legal {
+	padding-top: 1vh;
 	text-align: center;
-	padding: 1em;
+	height: 3vh;
 	font-weight: 700;
 }
