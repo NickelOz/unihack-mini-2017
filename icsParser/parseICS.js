@@ -110,10 +110,14 @@ function getFreeTimes(){
 }
 
 function addStudyTimes() {
-    for (i = 0; i < unitNameArray.length; i++){
+    for (var i = 0; i < unitNameArray.length; i++){
         readingTimes = PRE_READING_HOURS;
         postClassTimes = POST_CLASS_STUDY;
 
-        for (k = 0; k < )
+        for (var k = 0; k < freeTimes.length; k++){
+            var currentFree = freeTimes[k];
+            var currentFreeStart = currentFree[0].clone();
+            var currentFreeEnd = currentFree[1].clone();
+        }
     }
 }

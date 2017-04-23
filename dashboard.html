@@ -58,12 +58,6 @@
 
         </div>
     </div>
-    <div>
-        <form id="file-form" action="handler.php" method="POST" enctype="multipart/form-data">
-            <input class="buttons" type="file" id="file-select" name="userfile" />
-            <button class="buttons" type="submit" id="upload-button">Upload</button>
-        </form>
-    </div>
     <div class="calendar-main inner">
         <div class = "calendar-day calendar-monday"></div>
         <div class = "calendar-day calendar-tuesday"></div>
@@ -74,10 +68,11 @@
         <div class = "calendar-day calendar-sunday"></div>
     </div>
 </div>
+
 <div>
-    <form id="file-form" action="handler.php" onsubmit="return handle_submit()" method="POST" enctype="multipart/form-data">
-        <input type="file" id="file-select" name="userfile" />
-        <button type="submit" id="upload-button">Upload</button>
+    <form id="file-form" action="handler.php" method="POST" onsubmit="return handle_submit()" enctype="multipart/form-data">
+        <input class="buttons" type="file" id="file-select" name="userfile" />
+        <button class="buttons" type="submit" id="upload-button">Upload</button>
     </form>
 </div>
 
