@@ -17,7 +17,7 @@ header, .main, footer {
 
 header {
 	background-color: #00599d;
-	height: 2vw;
+	height: 3vh;
 	font-size: 20px;
 }
 
@@ -35,6 +35,7 @@ footer {
 	overflow: hidden;
 	padding: 1vw;
 	width: 100%;
+	margin-bottom: 2vh;
 	font-size: 32px;
 }
 
@@ -152,6 +153,7 @@ footer {
 	width: 80%;
 	margin: auto;
 	height: 20vh;
+	overflow: hidden;
 }
 
 .buttons {
