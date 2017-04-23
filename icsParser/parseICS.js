@@ -121,3 +121,14 @@ function addStudyTimes() {
         }
     }
 }
+
+function getAvailabilityFromUser() {
+    startHourDropdown = document.getElementById("startHour");
+    startHour = startHourDropdown.options[startHourDropdown.selectedIndex].value;
+
+    endHourDropdown = document.getElementById("endHour");
+    endHour = endHourDropdown.options[endHourDropdown.selectedIndex].value;
+
+    alert(startHour + "\n" + endHour);
+    return false;
+}
