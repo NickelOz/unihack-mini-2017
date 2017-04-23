@@ -13,3 +13,5 @@ $file_name = basename($_FILES['userfile']['name']);
 
 move_uploaded_file($tempname, "$destination_dir/$file_name");
 
+header("Location: completed.html");
+

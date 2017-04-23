@@ -10,14 +10,17 @@ var current_events = [];
 var unitNameArray = [];
 var freeTimes = [];
 
-$.ajax({
-    success:function(data){
-        iCalendarData = data;
-        parseICS(iCalendarData);
-        getFreeTimes();
-    },
-    url: '../calendar_files/timetable.ics'
-});
+function handle_submit(){
+    $.ajax({
+        success:function(data){
+            iCalendarData = data;
+            parseICS(iCalendarData);
+            getFreeTimes();
+            addStudyTimes();
+        },
+        url: 'calendar_files/timetable.ics'
+    });
+}
 
 function parseICS(iCalendarData) {
     var jcalData = ICAL.parse(iCalendarData);
@@ -102,8 +105,15 @@ function getFreeTimes(){
             freeTimes.push([freeStart, freeEnd]);
         }
     }
-    // for (l = 0; l < freeTimes.length; l++){
-    //     alert(freeTimes[l]);
-    // }
 
+
+}
+
+function addStudyTimes() {
+    for (i = 0; i < unitNameArray.length; i++){
+        readingTimes = PRE_READING_HOURS;
+        postClassTimes = POST_CLASS_STUDY;
+
+        for (k = 0; k < )
+    }
 }
