@@ -7,6 +7,8 @@ html, body {
 
 body {
 	display: table;
+	font-family: "Cambria";
+	color: #ffffff;
 }
 header, .main, footer {
 	display: table-row;
@@ -14,11 +16,9 @@ header, .main, footer {
 }
 
 header {
-	background-color: #3B6891;
-	color: #ffffff;
-	height: 3vw;
-	font-family: "Cambria";
-	font-size: 24px;
+	background-color: #00599d;
+	height: 2vw;
+	font-size: 20px;
 }
 
 .main {
@@ -28,13 +28,13 @@ header {
 footer {
 	overflow: hidden;
 	background-color: #7facce;
-	color: #ffffff;
 }
 
 .banner{
 	overflow: hidden;
 	padding: 1vw;
 	width: 100%;
+	font-size: 32px;
 }
 
 .logo {
@@ -42,7 +42,6 @@ footer {
 	padding: 1vw;
 }
 .logo::first-letter {
-	font-size: 32px;
 	font-weight: 700;
 }
 
@@ -60,9 +59,10 @@ footer {
 }
 
 .inner {
-	background-color: #ffffff;
 	margin: auto;
 	width: 90%;
+	background-color: #99bcd7;
+	overflow: hidden;
 }
 
 #loginbox {
@@ -74,27 +74,110 @@ footer {
 	height: 90%;
 }
 
-.calendar-main {
+.container-main {
 	margin: 1vw 5vw;
 	border-style: solid;
 	border-radius: 10px;
 	border-color: #808080;
 	padding: 1vw;
-	height: 90%;
+}
+
+.calendar {
+	height: 120vh;
 }
 
 .calendar-day {
-	width: 12em;
-	min-width: 5px;
+	width: 14%;
 	height: 100%;
 	position: relative;
+	vertical-align: top;
 	display: inline-block;
 	border-style: solid;
 	border-radius: 10px;
 	border-color: #a9a9a9;
+	background-color: #ffffff;
+}
+
+.event {
+	width: 90%;
+	margin: 9px 9px;
+	border-radius: 5px;
+	font-weight: 700;
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.one {
+	height: 7%;
+  }
+
+.onehalf {
+	height: 10%;
+}
+
+.two {
+	height: 14%;
+}
+
+.three {
+	height: 20%;
+}
+
+.unit1 {
+	background-color: darkorange;
+}
+
+.unit2 {
+	background-color: dodgerblue;
+}
+
+.unit3 {
+	background-color: green;
+}
+
+.unit4 {
+	background-color: mediumpurple;
+}
+
+.personal {
+	background-color: grey;
+}
+
+#file-form {
+	width: 80%;
+	margin: auto;
+}
+
+.buttons {
+	height: 90%;
+	width: 45%;
+	border-color: grey;
+	color: #000000;
+	font-size: 24px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: inline;
+}
+
+#file-select {
+	float:left;
+	text-align: center;
+}
+
+#upload-button {
+	float: right;
+}
+
+.save {
+	float: right;
 }
 
 .legal {
 	text-align: center;
 	padding: 1em;
+	font-weight: 700;
 }
